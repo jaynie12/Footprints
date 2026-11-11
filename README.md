@@ -19,9 +19,20 @@ Phase 2 for scaling:
 2.  No-SQL database for the pins/media meta data
 3.  Object store for the actual videos themselves
 
-Trade off: Extra costs for managing multiple databases and extra operational overhead. But the priority here will be reduced latency, easier scaling and caching. 
+Trade off: Extra costs for managing multiple databases and extra operational overhead. But the priority here will be reduced latency, easier scaling and caching.
+
+# Proposed Wireframes
+
+NOTE: Real pins instead of the location stock image pins will be used (I just couldn't find a nice image of real pins so will need to generate one) 
+
+<img width="100" height="300" alt="image" src="https://github.com/user-attachments/assets/54e08976-6a83-44c6-9365-940d91a3ceff" />
+
 
 # Data model
 
 
 # Systems Diagram
+
+
+# Agent Strategy for Agentic Software lifeycle
+
