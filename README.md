@@ -1,7 +1,7 @@
 # Footprints
  visual, personal archive that transforms a map into a wholesome memory vault for a user's entire lifetime; combining travel, local everyday moments, concerts, and dining into a single emotional canvas
 
-
+# Tech Stack
  
  # User Journey 
  
@@ -25,7 +25,7 @@ Trade off: Extra costs for managing multiple databases and extra operational ove
 
 NOTE: Real pins instead of the location stock image pins will be used (I just couldn't find a nice image of real pins so will need to generate one) 
 
-<img width="100" height="300" alt="image" src="https://github.com/user-attachments/assets/54e08976-6a83-44c6-9365-940d91a3ceff" />
+<img width="918" height="621" alt="image" src="https://github.com/user-attachments/assets/8e5d82a9-c889-41df-9010-2e806b8e9d92" />
 
 
 # Data model
