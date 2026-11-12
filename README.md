@@ -28,11 +28,28 @@ NOTE: Real pins instead of the location stock image pins will be used (I just co
 <img width="918" height="621" alt="image" src="https://github.com/user-attachments/assets/8e5d82a9-c889-41df-9010-2e806b8e9d92" />
 
 
-# Data model
+# Data model  
+
+
 
 
 # Systems Diagram
 
 
 # Agent Strategy for Agentic Software lifeycle
+I am choosing not to have an architecture agent as I would like to design this myself. 
+There will be handoff settings between each agent to maintain context but human in the loop between each
+
+Agent 1: Requirement refinement (I will input the requirement, 
+ -  Sub Agent a:  Research tech choices documentation
+ -  Sub Agent b: Write a testing plan 
+Agent 2: Developer and unit tester
+Agent 3: Read only peer reviewer
+Agent 4: QA tester to validate functionality and if needed take screenshots as evidence
+Agent 5: Deployment of branch to github
+
+Skills:
+1. Code reviewer skill
+2. How to QA test skill
+
 
