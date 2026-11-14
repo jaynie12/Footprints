@@ -1,12 +1,16 @@
 # Footprints
- visual, personal archive that transforms a map into a wholesome memory vault for a user's entire lifetime; combining travel, local everyday moments, concerts, and dining into a single emotional canvas
+ Visual, personal archive that transforms a map into a wholesome memory vault for a user's entire lifetime; combining travel, local everyday moments, concerts, and dining into a single emotional canvas
 
-# Tech Stack
-Flutter as I would like it to be an app
- 
- # User Journey 
- 
- <img width="1216" height="648" alt="image" src="https://github.com/user-attachments/assets/2a64c30d-ced2-4b47-ae6f-88580df79cc0" />
+# Design Decisions (In depth)
+Please see the **design-decisions** directory for detailed information on the following
+
+- AWS storage justifications
+- Agentic workflow decisions
+- Data models
+- Tech stack justifications
+- Wireframes
+
+
 
 # Database strategy
 
@@ -22,12 +26,6 @@ Phase 2 for scaling:
 
 Trade off: Extra costs for managing multiple databases and extra operational overhead. But the priority here will be reduced latency, easier scaling and caching.
 
-# Proposed Wireframes
-
-NOTE: Real pins instead of the location stock image pins will be used (I just couldn't find a nice image of real pins so will need to generate one) 
-Colour scheme: To be decided 
-
-<img width="918" height="621" alt="image" src="https://github.com/user-attachments/assets/8e5d82a9-c889-41df-9010-2e806b8e9d92" />
 
 
 # Data model  
