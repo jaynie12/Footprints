@@ -1,0 +1,24 @@
+{
+  "name": "footprints-backend",
+  "version": "0.0.1",
+  "private": true,
+  "main": "dist/handler.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "package:lambda": "npm run build && powershell -NoProfile -File scripts/package-lambda.ps1",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test src/handler.test.ts test/scaffold.test.cjs",
+    "health": "node --test src/handler.test.ts"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.6",
+    "@typescript-eslint/eslint-plugin": "8.73.0",
+    "@typescript-eslint/parser": "8.73.0",
+    "eslint": "8.57.1",
+    "typescript": "6.0.3"
+  },
+  "engines": {
+    "node": ">=22.11.0"
+  }
+}

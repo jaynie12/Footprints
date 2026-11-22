@@ -28,8 +28,3 @@ Inspiration: https://aws.plainenglish.io/track-your-s3-uploads-like-a-pro-with-l
 
 ## Scaling considerations
 - In the future if I require options such as sharing a footprint app or creating  a group map, then I will explore the use of Aurora DB
-
-
-Summary
-
-- This was an interesting decision to make because 

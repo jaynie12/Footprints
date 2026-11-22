@@ -1,0 +1,12 @@
+{
+  "name": "footprints",
+  "private": true,
+  "scripts": {
+    "android": "npm --prefix frontend run android",
+    "start": "npm --prefix frontend run start",
+    "lint": "npm --prefix frontend run lint && npm --prefix backend run lint",
+    "typecheck": "npm --prefix frontend run typecheck && npm --prefix backend run typecheck",
+    "test": "npm --prefix frontend test -- --runInBand && npm --prefix backend test",
+    "health": "npm --prefix backend run health"
+  }
+}

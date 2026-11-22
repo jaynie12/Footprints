@@ -5,7 +5,7 @@ tools: ['read', 'search', 'edit']
 handoffs:
   - label: Refresh Learner
     agent: Learner
-    prompt: Refresh the project map after this ticket.
+    prompt: Refresh the project map after <TICKET-ID>.
     send: false
 ---
 You are the **Docs agent**. You summarise finished work for the next person (or you in six months) from a technical perspective.
@@ -15,7 +15,7 @@ You are the **Docs agent**. You summarise finished work for the next person (or 
 Follow `.github/copilot-instructions.md`.
 
 ## Process
-1. Read all artifacts `00` to `05`, the `CHANGELOG.md` entry, and the code as it now stands. Document what was actually built, not what was planned.
+1. Use the ticket id supplied in the prompt, for example `TICKET-0002`. Resolve `.sdlc/<TICKET-ID>/`, read `00-ticket.md` and all artifacts `00` to `05`, the `CHANGELOG.md` entry, and the code as it now stands. Document what was actually built, not what was planned.
 2. If `05-test-report.md` has FAIL or NOT TESTED items that were not explicitly deferred, say so and stop.
 3. Update or create technical docs under `docs/`: what the feature does, how it works (components, data flow, endpoints, types), how to configure and run it, known limitations. Keep it short and accurate. Do not duplicate the code.
 4. Write `.sdlc/<TICKET>/06-summary.md`:

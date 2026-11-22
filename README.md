@@ -1,6 +1,39 @@
 # Footprints
  Visual, personal archive that transforms a map into a wholesome memory vault for a user's entire lifetime; combining travel, local everyday moments, concerts, and dining into a single emotional canvas
 
+## Project setup
+
+Phase 1 includes an Android React Native CLI app and a TypeScript Node.js backend.
+
+Install dependencies from the repository root:
+
+```powershell
+npm install --prefix frontend
+npm install --prefix backend
+```
+
+Set up the Android development environment by following the React Native
+[Android environment guide](https://reactnative.dev/docs/set-up-your-environment).
+Then start Metro in one terminal and build/run the Android app in another:
+
+```powershell
+npm run start
+npm run android
+```
+
+Run the project checks from the repository root:
+
+```powershell
+npm run lint
+npm run typecheck
+npm test
+npm run health
+```
+
+The backend health route is `GET /health` and returns `{"status":"ok"}`. To
+prepare the phase-one Lambda ZIP for console upload, run
+`npm --prefix backend run package:lambda`; see [backend/README.md](./backend/README.md).
+
 # Design Decisions (In depth)
 Please see the **design-decisions** directory for detailed information on the following
 

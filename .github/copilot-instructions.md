@@ -16,6 +16,8 @@ These rules apply to every task and every agent. Keep this file short; procedure
 
 Each work item lives in `.sdlc/<TICKET-ID>/`. **Handoffs are files, not chat memory**: read the previous stage's file, write your own.  Bascially every ticket is its own mini-project, with its own requirements, design, code, tests, review, test report and summary. The only exception is the Learner stage, which reads the repo and writes the context file. 
 
+**Ticket lookup:** a prompt must include a ticket id such as `TICKET-0002`. Resolve it only as `.sdlc/<TICKET-ID>/`. Read `.sdlc/<TICKET-ID>/00-ticket.md` before any ticket-specific work. Never search by title or infer another ticket folder.
+
 | Stage | Agent | Reads | Writes (only here) |
 |---|---|---|---|
 | 0 | Learner | repo | `.sdlc/architecture.md`, `.sdlc/decisions.md`, `<T>/00-context.md` |

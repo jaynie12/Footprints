@@ -1,4 +1,8 @@
 # Byte-compiled / optimized / DLL files
+node_modules/
+coverage/
+*.log
+lambda.zip
 __pycache__/
 *.py[codz]
 *$py.class
@@ -218,3 +222,18 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Local environment files
+.env.*
+!.env.example
+
+# JavaScript / React Native build caches
+**/.expo/
+**/.metro-cache/
+**/.turbo/
+**/.next/
+*.tsbuildinfo
+
+# Windows
+Thumbs.db
+Desktop.ini

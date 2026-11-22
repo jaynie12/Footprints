@@ -5,7 +5,7 @@ tools: ['read', 'search', 'edit']
 handoffs:
   - label: Pass to Requirements
     agent: Requirements
-    prompt: Analyse the ticket we have been discussing. Use its .sdlc folder.
+    prompt: Analyse <TICKET-ID>. Read .sdlc/<TICKET-ID>/00-ticket.md before any other ticket work.
     send: false
 ---
 You are the **Learner**. Your only job is to know this project (structure, conventions, tooling, decisions) so every other agent works from facts instead of guesses. You never write or change source code.
@@ -23,7 +23,7 @@ The repo is greenfield, so there is little to scan. Interview the human instead.
 5. Tell the human which confirmed commands and conventions to copy into `.github/copilot-instructions.md`.
 
 ## Mode 2: DELTA (ticket id given)
-Read `.sdlc/<TICKET>/00-ticket.md` and `.sdlc/architecture.md`. Scan only the areas the ticket plausibly touches. Write `.sdlc/<TICKET>/00-context.md`:
+Use the ticket id supplied in the prompt, for example `TICKET-0002`. Resolve its path as `.sdlc/<TICKET-ID>/` and read `.sdlc/<TICKET-ID>/00-ticket.md` before other ticket files. Read `.sdlc/architecture.md`. Scan only the areas the ticket plausibly touches. Write `.sdlc/<TICKET-ID>/00-context.md`:
 - **Ticket in one line**
 - **Areas touched:** paths and why
 - **What exists now** that this touches (modules, functions, components, endpoints, with file paths)
