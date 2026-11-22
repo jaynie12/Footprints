@@ -40,16 +40,7 @@ Trade off: Extra costs for managing multiple databases and extra operational ove
 I am choosing not to have an architecture agent as I would like to design this myself. 
 There will be handoff settings between each agent to maintain context but human in the loop between each
 
-Agent 1: Requirement refinement (I will input the requirement, 
- -  Sub Agent a:  Research tech choices documentation
- -  Sub Agent b: Write a testing plan 
-Agent 2: Developer and unit tester
-Agent 3: Read only peer reviewer
-Agent 4: QA tester to validate functionality and if needed take screenshots as evidence
-Agent 5: Deployment of branch to github
-
-Skills:
-1. Code reviewer skill
-2. How to QA test skill
+- See the agents folder for the actual agents
+- See the agentic-workflow files in the design-decisions folder for the rationale
 
 

@@ -14,7 +14,7 @@ These rules apply to every task and every agent. Keep this file short; procedure
 
 ## Workflow
 
-Each work item lives in `.sdlc/<TICKET-ID>/`. **Handoffs are files, not chat memory**: read the previous stage's file, write your own.
+Each work item lives in `.sdlc/<TICKET-ID>/`. **Handoffs are files, not chat memory**: read the previous stage's file, write your own.  Bascially every ticket is its own mini-project, with its own requirements, design, code, tests, review, test report and summary. The only exception is the Learner stage, which reads the repo and writes the context file. 
 
 | Stage | Agent | Reads | Writes (only here) |
 |---|---|---|---|
